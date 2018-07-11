@@ -5,7 +5,8 @@ import store from './store'
 import '@/styles/base.styl'
 import '@fortawesome/fontawesome-pro/css/all.css'
 
-import App from './App.vue'
+import App from '@/App.vue'
+import '@/components/ui'
 
 Vue.config.productionTip = false
 
