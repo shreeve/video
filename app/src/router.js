@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import VideoJoin from '@/components/video/VideoJoin'
+import VideoCall from '@/components/video/VideoCall'
 
 Vue.use(Router)
 
@@ -11,6 +12,11 @@ export default new Router({
     {
       path: '/',
       component: VideoJoin
+    },
+    {
+      path: '/r/:roomName',
+      name: 'videoCall',
+      component: VideoCall
     }
   ]
 })

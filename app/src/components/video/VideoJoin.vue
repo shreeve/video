@@ -1,7 +1,7 @@
 <template lang="pug">
 .fullscreen
   .video-join.content__panel
-    .video-join__header Join video
+    .video-join__header Video Call
 
     .video-join__content
       .video-join__info Please enter a room name:
@@ -47,7 +47,7 @@ export default {
     },
 
     joinRoom () {
-      // this.$router.push()
+      this.$router.push({ name: 'videoCall', params: { roomName: this.roomName }})
     }
   }
 }
